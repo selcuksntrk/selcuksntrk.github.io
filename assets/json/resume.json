@@ -98,9 +98,7 @@
       "startDate": "2022-08-01",
       "endDate": "2022-09-01",
       "summary": "Developed a project to detect outliers in time series data using statistical techniques and Facebook's Prophet algorithm.",
-      "highlights": [
-        "Created a forecasting project for future predictions, gaining experience in research and development processes"
-      ]
+      "highlights": ["Created a forecasting project for future predictions, gaining experience in research and development processes"]
     },
     {
       "name": "Izmir Institute of Technology",
@@ -195,24 +193,12 @@
     {
       "name": "Frameworks & Tools",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "PyTorch",
-        "TensorFlow",
-        "LangChain / LangGraph",
-        "Hugging Face Transformers",
-        "Scikit-learn",
-        "Docker",
-        "Streamlit"
-      ]
+      "keywords": ["PyTorch", "TensorFlow", "LangChain / LangGraph", "Hugging Face Transformers", "Scikit-learn", "Docker", "Streamlit"]
     },
     {
       "name": "Platforms",
       "icon": "fa-solid fa-cloud",
-      "keywords": [
-        "IBM Watson X",
-        "Microsoft Azure",
-        "AWS"
-      ]
+      "keywords": ["IBM Watson X", "Microsoft Azure", "AWS"]
     }
   ],
   "languages": [
@@ -231,12 +217,7 @@
     {
       "name": "AI Research",
       "icon": "fa-solid fa-flask",
-      "keywords": [
-        "ML Model Optimization",
-        "Efficient AI Systems",
-        "Multi-Agent Systems",
-        "LLM Applications"
-      ]
+      "keywords": ["ML Model Optimization", "Efficient AI Systems", "Multi-Agent Systems", "LLM Applications"]
     }
   ]
 }

@@ -4,7 +4,7 @@
 
 title: Selcuk Senturk # the website title (if blank, full name will be used instead)
 first_name: Selcuk
-middle_name: 
+middle_name:
 last_name: Senturk
 contact_note: >
   Feel free to reach out by email or LinkedIn.
@@ -17,7 +17,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://selcuksntrk.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -165,7 +165,7 @@ external_sources: []
 
 newsletter:
   enabled: true
-  endpoint: cmke5fozh01qt0i50opekcxv8 # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  endpoint: cmke5fozh01qt0i50opekcxv8 # Loops form ID only, not the full URL
   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------

@@ -112,8 +112,7 @@ For line numbers in a specific block, use Liquid highlight:
 
 ```liquid
 {% highlight python linenos %}
-def train(model, dataloader):
-    pass
+def train(model, dataloader): pass
 {% endhighlight %}
 ```
 
@@ -224,16 +223,10 @@ For a responsive row:
 
 ```html
 <div class="row mt-3">
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/example-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
-  <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/example-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
-  </div>
+  <div class="col-sm mt-3 mt-md-0">{% include figure.liquid path="assets/img/example-1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}</div>
+  <div class="col-sm mt-3 mt-md-0">{% include figure.liquid path="assets/img/example-2.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}</div>
 </div>
-<div class="caption">
-  Short, useful caption.
-</div>
+<div class="caption">Short, useful caption.</div>
 ```
 
 Recommendations:
@@ -279,10 +272,10 @@ Use media only when it adds real explanation, such as a demo of a model, UI, or 
 Markdown tables work for small static content:
 
 ```markdown
-| Metric | Value |
-| --- | ---: |
-| Accuracy | 0.92 |
-| Latency | 35 ms |
+| Metric   | Value |
+| -------- | ----: |
+| Accuracy |  0.92 |
+| Latency  | 35 ms |
 ```
 
 For larger, sortable, or interactive tables, the demo posts used HTML tables and JSON data. Prefer simple Markdown until interactivity is clearly useful.
@@ -309,7 +302,7 @@ Use notebooks for exploratory ML/data science posts when readers benefit from se
 Pattern:
 
 ```liquid
-{% assign notebook_path = "assets/jupyter/example.ipynb" | relative_url %}
+{% assign notebook_path = 'assets/jupyter/example.ipynb' | relative_url %}
 {% jupyter_notebook notebook_path %}
 ```
 
