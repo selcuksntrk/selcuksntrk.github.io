@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 nav_order: 1
-subtitle: AI/ML Engineer, IBM Expert Labs
+subtitle: AI/ML Engineer @ IBM
 description: >
   Selcuk Senturk is an AI/ML Engineer at IBM Expert Labs focused on AI agents, RAG systems, computer vision, LLM applications, and production machine learning.
 

@@ -77,6 +77,10 @@
   }
 }
 
+body:not(.sticky-bottom-footer) #back-to-top {
+  bottom: calc(#{v.$back-to-top-bottom} + 3rem + env(safe-area-inset-bottom));
+}
+
 html[data-theme="dark"] {
   color-scheme: dark;
   --global-bg-color: #{v.$grey-color-dark};
