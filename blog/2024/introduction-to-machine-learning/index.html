@@ -1,0 +1,183 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Introduction to Machine Learning | Selcuk Senturk </title> <meta name="author" content="Selcuk Senturk"> <meta name="description" content="Understanding the fundamentals of machine learning: types, learning modes, and main challenges."> <meta name="keywords" content="artificial intelligence, machine learning, deep learning, data science, computer science, software, architecture, AI, AI Engineer, ML, ML engineer, blog, portfolio"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.css" integrity="sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://selcuksntrk.github.io/blog/2024/introduction-to-machine-learning/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Selcuk Senturk </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top toc toc-sidebar" aria-label="Table of contents" data-toc-collapse="expanded" data-toc-collapse-depth=""></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">Introduction to Machine Learning</h1> <p class="post-meta"> Created on October 13, 2024 </p> <p class="post-tags"> <a href="/blog/2024"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </a>   ·   <a href="/blog/tag/machine-learning"> <i class="fa-solid fa-hashtag fa-sm"></i> machine-learning</a>   <a href="/blog/tag/data-science"> <i class="fa-solid fa-hashtag fa-sm"></i> data-science</a>   <a href="/blog/tag/ai"> <i class="fa-solid fa-hashtag fa-sm"></i> ai</a>   <a href="/blog/tag/cs-fundamentals"> <i class="fa-solid fa-hashtag fa-sm"></i> cs-fundamentals</a>   ·   <a href="/blog/category/machine-learning"> <i class="fa-solid fa-tag fa-sm"></i> machine-learning</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h2 id="types-of-machine-learning">Types of Machine Learning</h2> <p>There are three main categories of machine learning systems:</p> <ul> <li> <strong>Supervision modes</strong>: supervised, unsupervised, and reinforcement learning</li> <li> <strong>Learning modes</strong>: online learning and batch learning</li> <li> <strong>Inference types</strong>: instance-based and model-based learning</li> </ul> <p>These categories are not mutually exclusive and can be combined according to the needs of the problem.</p> <h3 id="example">Example</h3> <p>A self-driving car might use a machine learning system that employs supervised learning, learns through batch learning, and reasons through a statistical model that enables short-term predictions, such as detecting that the car ahead is braking and the system needs to activate the brakes soon.</p> <hr> <h2 id="supervised-learning">Supervised Learning</h2> <p>The most common learning mode is supervised learning. This means training the system with data that contains the desired solution. These solutions are called <strong>labels</strong>.</p> <p>An example of labeled data could be an image of a car, which is the input data, and its assigned car model, which is the label. After a machine learning system is trained on data and labels, it can take a new image and output its predicted label. The metrics used to measure the system’s ability to assign correct labels vary by problem, and they are just as important as the training process itself.</p> <p>The two most common tasks addressed with supervised learning are <strong>classification</strong> and <strong>regression</strong>.</p> <h3 id="classification">Classification</h3> <p>A classification problem assigns a discrete label to a new input. This can be a numerical value or a category, such as deciding whether a given image represents a dog or a cat. In either case, the answer belongs to a well-defined set of options. Properly defining those options can significantly affect model performance.</p> <h3 id="regression">Regression</h3> <p>A regression problem assigns a continuous value to new data. For example, a model might predict the price of a house from features such as the number of rooms, size in square meters, and number of bathrooms. In this case, the output belongs to a continuous range rather than a finite set.</p> <p>Supervised learning requires a significant amount of labeled data for the model to learn effectively.</p> <p>The classic example is a model trained on thousands of cat and dog images that learns to classify new photos into one of these two categories. Classification models can learn to distinguish any number of classes, as long as they have a representative dataset.</p> <p>Generally, classification models predict the probability of an input sample belonging to each output class. These probabilities can be interpreted as the model’s confidence that a particular sample belongs to each class. A predicted probability can be converted to a class value by selecting the label with the highest probability.</p> <h3 id="example-1">Example</h3> <p>A model trained to distinguish cat and dog images, when given a cat image as input, might output probability values of 0.876 for cat and 0.124 for dog. In this case, the model decides the image is a cat because that probability is highest. We can also think of this value as the model’s confidence in its conclusion.</p> <hr> <h2 id="unsupervised-learning">Unsupervised Learning</h2> <p>What if we do not have labeled data, or our goal is to discover structure we do not already know about? This is where unsupervised learning comes in, because the input consists of raw data without labels.</p> <p>For example, imagine a supermarket sales dataset containing all purchases made by customers, basket by basket. By grouping frequently purchased items together, we can extract product relationships and choose to place products on nearby shelves or offer discounts on one product when others are purchased.</p> <p>Unsupervised learning is also used as a complement to supervised learning. It can help explore data, even pre-labeled data, and reveal groupings or patterns that may have gone unnoticed.</p> <p>Another use of this type of learning is <strong>dimensionality reduction</strong>. The aim is to reduce the number of features while preserving the value of the data. This is especially useful when the dataset is very large and sparse.</p> <hr> <h2 id="reinforcement-learning">Reinforcement Learning</h2> <p>Reinforcement learning is different from supervised and unsupervised learning. In this context, the learning system is called an <strong>agent</strong>. The agent learns by observing its environment, performing actions, and evaluating them based on a <strong>reward</strong> signal.</p> <p>The agent is designed to improve itself by adjusting action parameters and aiming to achieve a larger reward. The model changes its behavior to optimize for the highest reward.</p> <p>Reinforcement learning is heavily used in robotics. For example, a robot can learn to move around its environment by gradually learning from mistakes. Hitting a wall decreases the reward, while moving without collision increases the reward.</p> <hr> <h2 id="learning-modes">Learning Modes</h2> <p>Another important feature of machine learning systems is whether they learn in one-shot mode, often called batch learning, or in a continuously incremental mode, often called online learning.</p> <h3 id="batch-learning">Batch Learning</h3> <p>In batch learning, also called offline learning, the system is trained using all available data. This is usually a long and computationally expensive process, so it is only performed occasionally. When you want to retrain the model, you train it again on all the data, usually combining old data with any meaningful new data.</p> <p>Fortunately, this training method can be automated. For example, a team might choose to retrain a model every night or every week.</p> <h3 id="online-learning">Online Learning</h3> <p>If you need a system that responds quickly to change, such as fraud detection or cyber attack detection, online learning can be a better solution. In online learning, the system is trained sequentially by taking small groups of data called <strong>mini-batches</strong> as input. Learning from new data is cheap and fast because the system updates as data arrives.</p> <p>Online learning is useful when you need reactive system behavior or when you have limited computational power. The term “online” does not necessarily mean the system is connected to a network. It means the system learns from a continuous stream of data.</p> <hr> <h2 id="inference-types">Inference Types</h2> <p>One last way to categorize machine learning systems is by how they generalize.</p> <h3 id="model-based-systems">Model-Based Systems</h3> <p>Model-based systems aim to create a representation, or model, of knowledge. That model is then used to produce outputs.</p> <h3 id="instance-based-systems">Instance-Based Systems</h3> <p>Instance-based systems do not generalize from an unseen input in the same way. Instead, they compare the input with previous data stored in memory and try to find the closest match.</p> <h3 id="example-scenario">Example Scenario</h3> <p>Given a set of coordinates, such as X and Y values, suppose we want to estimate the right Y value for a new X value. One strategy is to compare the new X value with known X values, take the closest known point, and assign its Y value to the new point.</p> <p>This approach is simple, but it relies on the strong assumption that a new point’s output is determined by its nearest neighbor.</p> <p>The system learns its knowledge by memory and applies a similarity measure, such as distance along the X dimension, to new situations.</p> <p>Another approach is to create a representation of how the existing data was generated and use that model to estimate the Y value for a new X value. A model is a set of parameters that, when tuned appropriately, can provide a reasonable estimate for unseen inputs.</p> <p>In a simple example, the model might be a straight line that best represents a series of points. The parameters are the slope of the line and the point where it intersects the y-axis. Training the model means finding good values for these parameters.</p> <p>A machine learning model can contain tens of thousands or even millions of parameters. Training those parameters requires computational power, and improving the model training process is an important research and engineering topic.</p> <hr> <h2 id="main-challenges-of-machine-learning">Main Challenges of Machine Learning</h2> <h3 id="insufficient-data">Insufficient Data</h3> <p>The fundamental assumption of machine learning is having enough data to train models and then use them to solve problems. In the real world, there may be situations where the available data is not sufficient to train a model that can identify useful patterns.</p> <p>Even simple problems can require thousands of examples. Complex problems like image recognition or speech recognition may require millions of examples.</p> <p>Various organizations are moving toward open data platforms to share datasets and enable applications that would otherwise be difficult to build.</p> <p>The labeling issue is also important. Services like CloudFactory or AWS Mechanical Turk try to meet this need by bringing together organizations that need data labeling and people who can label that data. Such services have limitations, including labeling accuracy and completion time.</p> <h3 id="low-quality-and-non-representative-data">Low-Quality and Non-Representative Data</h3> <p>Another common problem is low-quality training data. Missing, poorly formatted, or incorrect data can be fatal for a machine learning project. Ideally, high-quality data should be produced directly, but many projects start from existing data that is messy or incomplete.</p> <p>Therefore, one of the most important and time-consuming steps in developing an ML application is <strong>data preprocessing</strong>.</p> <p>Data preprocessing consists of cleaning the data and preparing it for the machine learning model. This can include removing damaged samples, adjusting string formats, and managing missing values. The preprocessing stage is context-dependent and can take many forms.</p> <p>At this stage, we may also try to increase the size of the dataset. For example, if we have an image dataset, we might add transformed copies of images, such as rotated or blurred versions. This lets the model learn from different views of the same image.</p> <p>This technique, called <strong>data augmentation</strong>, is useful for increasing model robustness. The model learns to recognize images even when they are damaged or altered. However, augmentation usually does not add truly new information. That can only come from additional data.</p> <p>Non-representative data is another common issue. For a model to generalize effectively, it must have seen cases that cover most realistic situations.</p> <p>For example, consider a dataset of temperatures collected on various days of the year, where the task is to predict the temperature of a given day. If we only have November temperatures, how can the model discover the April temperature pattern? Even worse, if that particular November was unusually warm, the model may produce misleading predictions.</p> <p>As a thought experiment, a random model that generates a random number within the minimum and maximum temperature range could outperform a model trained on non-representative data.</p> <h3 id="underfitting">Underfitting</h3> <p>Underfitting occurs when the model is too simple to represent the structure of the dataset, so it cannot capture the patterns in the data.</p> <p>For example, if we wanted to use a linear model to classify dog and cat images, we would probably get unacceptable performance because a linear model cannot capture the complexity of image data.</p> <p>One solution to underfitting is to train more complex models, such as neural networks with many parameters. These models can account for more variables that may affect the output. In a 64 by 64 pixel image, there are 4096 possible pixel positions that may influence the result. A model with too few parameters may struggle with this complexity.</p> <h3 id="overfitting">Overfitting</h3> <p>Overfitting is the opposite problem. It happens when a model is too complex for the task or the amount of data available.</p> <p>For example, a complex high-degree curve trained to predict house prices may represent the training dataset extremely well, but fail on new data. The model has memorized the training data rather than learning a pattern that generalizes.</p> <h3 id="the-balance-between-underfitting-and-overfitting">The Balance Between Underfitting and Overfitting</h3> <p>The balance between model complexity, amount of data, and task difficulty is one of the fundamental concepts behind model architecture choices.</p> <ul> <li> <strong>Underfitting</strong>: The model is too simple and cannot capture the complexity of the dataset.</li> <li> <strong>Normal Learning</strong>: The model captures the general pattern in the data without memorizing each point.</li> <li> <strong>Overfitting</strong>: The model adapts too strongly to the training data and has difficulty generalizing later.</li> </ul> <hr> <h2 id="conclusion">Conclusion</h2> <p>We have seen how machine learning models can be classified, and we have introduced classification, regression, learning modes, inference types, and common ML challenges.</p> <p>In the continuation of this series, we will build the technical foundation needed to create machine learning models. We will start with mathematical concepts and continue by examining the architectures of machine learning models. The ultimate goal is to gain the ability to build AI models for real problems.</p> </div> </article> <div id="giscus_thread" style="max-width: 930px; margin: 0 auto;"> <br> <blockquote class="block-danger"> <h5>giscus comments misconfigured</h5> <p>Please follow instructions at <a href="http://giscus.app" rel="external nofollow noopener" target="_blank">http://giscus.app</a> and update your giscus configuration.</p> <p>Missing required keys: <code>category_id</code>.</p> </blockquote> </div> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Selcuk Senturk. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a> and hosted on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script defer src="https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.js" integrity="sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw=" crossorigin="anonymous"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Selected AI/ML, data science, and intelligent systems projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "My professional resume and experience.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "post-introduction-to-machine-learning",
+        
+          title: "Introduction to Machine Learning",
+        
+        description: "Understanding the fundamentals of machine learning: types, learning modes, and main challenges.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/introduction-to-machine-learning/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "projects-p-mage-ai-agent",
+          title: 'P-Mage AI Agent',
+          description: "A GPT-4o-mini powered project planning AI agent that helps organize, plan, and manage projects efficiently.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_p_mage_ai_agent/";
+            },},{id: "projects-deep-steganography",
+          title: 'Deep Steganography',
+          description: "Neural networks that hide an image within another image, with a second model that extracts the hidden content.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_deep_steganography/";
+            },},{id: "projects-anomaly-detection",
+          title: 'Anomaly Detection',
+          description: "An early warning system for detecting anomalies in product metrics and helping teams respond before issues escalate.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_anomaly_detection/";
+            },},{id: "projects-time-series-forecasting",
+          title: 'Time Series Forecasting',
+          description: "Predictive models for business metrics that support planning by forecasting future trends in operational data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_time_series_forecasting/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/SelcukSenturkResume.pdf", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%73%65%6C%63%75%6B%73%6E%74%72%6B@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/selcuksntrk", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/selcuksntrk", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/selcuksntrk", "_blank");
+        },
+      },{
+        id: 'social-medium',
+        title: 'Medium',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://medium.com/@selcuksntrk", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script defer src="/assets/al_newsletter/js/newsletter.js"></script> </body> </html>
