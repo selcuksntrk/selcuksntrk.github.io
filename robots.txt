@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://selcuksntrk.github.io/sitemap.xml
+Sitemap: https://selcuks.com/sitemap.xml
