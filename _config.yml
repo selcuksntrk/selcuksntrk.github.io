@@ -2,21 +2,22 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Selcuk Senturk # the website title (if blank, full name will be used instead)
+title: Selcuk Senturk | AI/ML Engineer # the website title (if blank, full name will be used instead)
 first_name: Selcuk
 middle_name:
 last_name: Senturk
+author: Selcuk Senturk
 contact_note: >
   Feel free to reach out by email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Selcuk Senturk, an AI/ML Engineer at IBM Expert Labs focused on AI agents, RAG systems, computer vision, and production ML projects.
+  Portfolio and blog of Selcuk Senturk, an AI/ML Engineer at IBM Expert Labs building AI agents, RAG systems, computer vision, and production ML workflows.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> and hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: artificial intelligence, machine learning, deep learning, data science, computer science, software, architecture, AI, AI Engineer, ML, ML engineer, blog, portfolio # add your own keywords or leave empty
+keywords: Selcuk Senturk, AI/ML Engineer, IBM Expert Labs, AI agents, RAG systems, machine learning, deep learning, computer vision, NLP, LLMs, data science, production ML, portfolio, blog # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://selcuksntrk.github.io # the base hostname & protocol for your site
+url: https://selcuks.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -96,9 +97,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://selcuks.com/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -174,7 +175,7 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
       layout: post
@@ -182,7 +183,7 @@ collections:
   projects:
     output: true
   teachings:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -281,6 +282,14 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "_books"
+    values:
+      sitemap: false
+  - scope:
+      path: "_teachings"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -319,7 +328,7 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
   books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [] # disabled while the starter bookshelf is hidden from the public site.
 
 display_tags: ["machine-learning", "data-science", "ai", "ml-systems", "ai-systems", "intelligent-systems", "cs-fundamentals"] # these tags will be displayed on the front page of your blog
 display_categories: ["artificial-intelligence", "machine-learning", "data-science", "computer-science"] # these categories will be displayed on the front page of your blog

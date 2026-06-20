@@ -2,6 +2,8 @@
 layout: default
 permalink: /blog/
 title: blog
+description: >
+  AI and machine learning articles by Selcuk Senturk covering ML fundamentals, RAG systems, agents, and production AI engineering.
 nav: true
 nav_order: 2
 pagination:

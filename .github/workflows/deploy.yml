@@ -7,12 +7,14 @@ on:
       - main
     paths:
       - "assets/**"
+      - "CNAME"
       - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "robots.txt"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"
@@ -34,12 +36,14 @@ on:
       - main
     paths:
       - "assets/**"
+      - "CNAME"
       - "**.bib"
       - "**.html"
       - "**.js"
       - "**.liquid"
       - "**/*.md"
       - "**.yml"
+      - "robots.txt"
       - "Gemfile"
       - "Gemfile.lock"
       - "!.github/workflows/axe.yml"

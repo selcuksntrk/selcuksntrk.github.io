@@ -2,7 +2,8 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Selected GitHub repositories and technical projects.
+description: >
+  Selected GitHub repositories and technical projects from Selcuk Senturk, including AI agents, machine learning experiments, and engineering work.
 nav: true
 nav_order: 6
 ---
