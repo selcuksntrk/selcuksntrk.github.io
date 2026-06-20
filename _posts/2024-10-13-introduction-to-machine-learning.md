@@ -7,8 +7,6 @@ tags: machine-learning data-science intelligent-systems ml-systems
 categories: computer-science
 giscus_comments: true
 related_posts: false
-toc:
-  sidebar: left
 ---
 
 ## Types of Machine Learning
