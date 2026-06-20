@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Selcuk Senturk",
-    "label": "AI/ML Engineer",
+    "label": "AI and Machine Learning Engineer",
     "image": "",
     "email": "selcuksntrk@gmail.com",
     "url": "https://selcuks.com",
-    "summary": "AI/ML Engineer at IBM's Expert Labs, specializing in developing intelligent systems that understand, adapt, and solve complex problems. Background in Physics and Computer Science with expertise in LLMs, AI Agents, Deep Learning, and NLP.",
+    "summary": "AI and machine learning engineer at IBM Expert Labs, specializing in intelligent systems that understand, adapt, and solve complex problems. Background in Physics and Computer Science with expertise in LLMs, AI agents, deep learning, and NLP.",
     "location": {
       "city": "Istanbul",
       "countryCode": "TR",
@@ -32,8 +32,7 @@
   "work": [
     {
       "name": "IBM",
-      "position": "AI/ML Engineer - Expert Labs",
-      "location": "Istanbul, Turkiye",
+      "position": "AI and Machine Learning Engineer, Expert Labs",
       "startDate": "2025-10-01",
       "endDate": "",
       "summary": "Developing enterprise AI applications and multi-agent systems using the IBM Watson X platform.",
@@ -45,7 +44,6 @@
     {
       "name": "Kastas Sizdirmazlik Teknolojileri",
       "position": "Artificial Intelligence Specialist",
-      "location": "Izmir, Turkiye",
       "startDate": "2025-02-01",
       "endDate": "2025-09-01",
       "summary": "Researching and implementing AI agents to transform complex business processes into streamlined workflows.",
@@ -56,9 +54,8 @@
       ]
     },
     {
-      "name": "Siskon Yazilim & Otomasyon",
+      "name": "Siskon Yazilim and Otomasyon",
       "position": "Data Scientist",
-      "location": "Izmir, Turkiye",
       "startDate": "2024-04-01",
       "endDate": "2024-11-01",
       "summary": "Designed data collection strategies to extract insights from production processes.",
@@ -70,7 +67,6 @@
     {
       "name": "KPMG Turkiye",
       "position": "Data Scientist",
-      "location": "Istanbul, Turkiye",
       "startDate": "2023-06-01",
       "endDate": "2024-04-01",
       "summary": "Developed large language model applications for document question answering, ensuring data governance compliance for top companies in Turkey.",
@@ -82,7 +78,6 @@
     {
       "name": "infuseloop",
       "position": "Machine Learning Engineer Intern",
-      "location": "Izmir, Turkiye",
       "startDate": "2022-11-01",
       "endDate": "2023-02-01",
       "summary": "Developed a question answering system with NLP models, focusing on knowledge discovery from documents with AI.",
@@ -94,7 +89,6 @@
     {
       "name": "Jotform",
       "position": "Data Science Intern",
-      "location": "Ankara, Turkiye",
       "startDate": "2022-08-01",
       "endDate": "2022-09-01",
       "summary": "Developed a project to detect outliers in time series data using statistical techniques and Facebook's Prophet algorithm.",
@@ -103,7 +97,6 @@
     {
       "name": "Izmir Institute of Technology",
       "position": "Research Intern, Machine Learning",
-      "location": "Izmir, Turkiye",
       "startDate": "2021-08-01",
       "endDate": "2022-09-01",
       "summary": "Conducted research on machine learning techniques for protein family classification using distance matrices.",
@@ -115,7 +108,6 @@
     {
       "name": "Istanbul Technical University",
       "position": "Research Intern, Machine Learning",
-      "location": "Istanbul, Turkiye",
       "startDate": "2020-09-01",
       "endDate": "2021-06-01",
       "summary": "Conducted PCA operation to reduce data size, optimizing machine learning model performance.",
@@ -128,7 +120,6 @@
   "education": [
     {
       "institution": "Ege University",
-      "location": "Izmir, Turkiye",
       "area": "Computer Science",
       "studyType": "Master of Science",
       "startDate": "2024-09-01",
@@ -136,7 +127,6 @@
     },
     {
       "institution": "Izmir Institute of Technology",
-      "location": "Izmir, Turkiye",
       "area": "Physics",
       "studyType": "Bachelor of Science",
       "startDate": "2017-09-01",
@@ -152,71 +142,60 @@
   "certificates": [
     {
       "name": "IBM AI Engineering Professional Certificate",
-      "issuer": "IBM",
-      "icon": "fa-solid fa-certificate"
+      "issuer": "IBM"
     },
     {
       "name": "Deep Learning Specialization",
-      "issuer": "Coursera / DeepLearning.AI",
-      "icon": "fa-solid fa-brain"
+      "issuer": "Coursera and DeepLearning.AI"
     },
     {
       "name": "Machine Learning: Algorithms in the Real World Specialization",
-      "issuer": "Coursera",
-      "icon": "fa-solid fa-robot"
+      "issuer": "Coursera"
     },
     {
       "name": "Mathematics for Machine Learning Specialization",
-      "issuer": "Coursera / Imperial College London",
-      "icon": "fa-solid fa-square-root-variable"
+      "issuer": "Coursera and Imperial College London"
     },
     {
       "name": "Deep Neural Networks with PyTorch",
-      "issuer": "Coursera / IBM",
-      "icon": "fa-solid fa-fire"
+      "issuer": "Coursera and IBM"
     }
   ],
   "skills": [
     {
-      "name": "AI & Machine Learning",
-      "icon": "fa-solid fa-brain",
+      "name": "AI and Machine Learning",
       "keywords": [
         "Large Language Models (LLMs)",
         "RAG Architectures",
-        "AI Agents & Multi-Agent Systems",
-        "Deep Learning & Neural Networks",
+        "AI Agents and Multi-Agent Systems",
+        "Deep Learning and Neural Networks",
         "Natural Language Processing",
         "Computer Vision",
         "Time Series Analysis"
       ]
     },
     {
-      "name": "Frameworks & Tools",
-      "icon": "fa-solid fa-code",
-      "keywords": ["PyTorch", "TensorFlow", "LangChain / LangGraph", "Hugging Face Transformers", "Scikit-learn", "Docker", "Streamlit"]
+      "name": "Frameworks and Tools",
+      "keywords": ["PyTorch", "TensorFlow", "LangChain and LangGraph", "Hugging Face Transformers", "Scikit-learn", "Docker", "Streamlit"]
     },
     {
       "name": "Platforms",
-      "icon": "fa-solid fa-cloud",
       "keywords": ["IBM Watson X", "Microsoft Azure", "AWS"]
     }
   ],
   "languages": [
     {
       "language": "Turkish",
-      "fluency": "Native",
-      "icon": ""
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Professional Working",
-      "icon": ""
+      "fluency": "Professional Working"
     }
   ],
   "interests": [
     {
       "name": "AI Research",
-      "icon": "fa-solid fa-flask",
       "keywords": ["ML Model Optimization", "Efficient AI Systems", "Multi-Agent Systems", "LLM Applications"]
     }
   ]

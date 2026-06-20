@@ -3,8 +3,8 @@ layout: post
 title: "Introduction to Machine Learning"
 date: 2024-10-13 12:00:00+0300
 description: "Understanding the fundamentals of machine learning: types, learning modes, and main challenges."
-tags: machine-learning data-science ai cs-fundamentals
-categories: machine-learning
+tags: machine-learning data-science intelligent-systems ml-systems
+categories: computer-science
 giscus_comments: true
 related_posts: false
 toc:

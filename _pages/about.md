@@ -3,9 +3,9 @@ layout: about
 title: about
 permalink: /
 nav_order: 1
-subtitle: AI/ML Engineer - Expert Labs @ IBM
+subtitle: AI/ML Engineer, IBM Expert Labs
 description: >
-  Selcuk Senturk is an AI/ML Engineer at IBM Expert Labs focused on AI agents, RAG systems, computer vision, and production machine learning.
+  Selcuk Senturk is an AI/ML Engineer at IBM Expert Labs focused on AI agents, RAG systems, computer vision, LLM applications, and production machine learning.
 
 profile:
   align: right
@@ -28,8 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm an AI/ML Engineer at IBM Expert Labs, specializing in intelligent systems that understand, adapt, and solve complex problems. My background in Physics and Computer Science gives me a broad perspective on building AI systems that combine strong engineering with scientific thinking.
+I'm an AI/ML Engineer at IBM Expert Labs, building intelligent systems that understand context, adapt to data, and solve practical problems. My background in Physics and Computer Science shapes how I work: with scientific curiosity, strong engineering habits, and a focus on systems that can move beyond prototypes.
 
-I work on AI systems that learn from data and make useful decisions, from computer vision systems with real-time recognition to RAG-powered large language model applications. My work spans LLMs and RAG architectures, AI agents and multi-agent systems, deep learning, NLP, predictive intelligence, and production ML workflows.
-
-I'm especially interested in efficient AI: models and systems that are faster, smaller, and less resource-intensive while still delivering strong performance. My current focus is on AI agents, RAG systems, model inference optimization, and practical ML systems that can move from prototype to production.
+My work spans LLM and RAG applications, AI agents and multi-agent systems, computer vision, NLP, deep learning, predictive intelligence, and production ML workflows. I'm especially interested in efficient AI: faster, smaller, and more resource-aware systems that still deliver strong performance. My current focus is practical agents, RAG systems, inference optimization, and reliable ML systems for real-world use.

@@ -1,9 +1,10 @@
 ---
 layout: page
-title: projects
+title: AI/ML Projects
+nav_title: projects
 permalink: /projects/
 description: >
-  Selected AI/ML, data science, and intelligent systems projects by Selcuk Senturk, including agents, deep learning, anomaly detection, and forecasting.
+  Selected AI/ML engineering projects by Selcuk Senturk, including AI agents, deep learning, anomaly detection, forecasting, and intelligent systems.
 nav: true
 nav_order: 3
 display_categories: [AI/ML]
