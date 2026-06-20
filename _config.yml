@@ -250,6 +250,7 @@ exclude:
   - assets/jupyter/
   - assets/json/table_data.json
   - assets/plotly/
+  - assets/pdf/SelcukSenturkResume.pdf
   - assets/rendercv/
   - assets/video/
   - purgecss.config.js
