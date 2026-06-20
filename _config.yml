@@ -14,7 +14,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text:
 keywords: Selcuk Senturk, AI/ML Engineer, IBM Expert Labs, AI agents, RAG systems, machine learning, deep learning, computer vision, NLP, LLMs, data science, production ML, portfolio, blog # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: gizmo.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://selcuks.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
