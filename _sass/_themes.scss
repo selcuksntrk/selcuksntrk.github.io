@@ -10,11 +10,11 @@
 :root {
   color-scheme: light;
   --global-bg-color: #{v.$white-color};
-  --global-code-bg-color: rgba(15, 98, 254, 0.06);
+  --global-code-bg-color: rgba(11, 92, 173, 0.06);
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #0f62fe;
-  --global-hover-color: #0043ce;
+  --global-theme-color: #0b5cad;
+  --global-hover-color: #084a91;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-dark};
   --global-footer-text-color: #{v.$grey-color-light};
@@ -83,8 +83,8 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #78a9ff;
-  --global-hover-color: #a6c8ff;
+  --global-theme-color: #5aa7ff;
+  --global-hover-color: #8cc5ff;
   --global-hover-text-color: #{v.$black-color};
   --global-footer-bg-color: #{v.$grey-color-light};
   --global-footer-text-color: #{v.$grey-color-dark};
