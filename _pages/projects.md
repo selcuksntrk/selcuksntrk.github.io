@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected AI/ML, data science, and intelligent systems projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [AI/ML]
 horizontal: false
 ---
 
