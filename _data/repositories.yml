@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - selcuksntrk
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - selcuksntrk/p_mage_ai_agent
+  - selcuksntrk/PCA-with-Numpy
