@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /assets/pdf/SelcukSenturkResume.pdf
 
 Sitemap: https://selcuks.com/sitemap.xml
