@@ -23,6 +23,13 @@ bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}"
 giscus_page="${tmp_site}/blog/2022/giscus-comments/index.html"
 disqus_page="${tmp_site}/blog/2015/disqus-comments/index.html"
 
+# These assertions run against al-folio's example posts. A personalized site that has
+# removed them has nothing to check here, so skip rather than fail.
+if [ ! -f "${giscus_page}" ] || [ ! -f "${disqus_page}" ]; then
+  echo "comments integration checks skipped: example comment posts are not part of this site"
+  exit 0
+fi
+
 grep -q 'https://giscus.app/client.js' "${giscus_page}"
 if grep -q 'giscus comments misconfigured' "${giscus_page}"; then
   echo "unexpected giscus misconfiguration warning in ${giscus_page}" >&2

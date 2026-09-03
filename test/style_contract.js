@@ -61,9 +61,51 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
+// A starter may shadow a gem-owned file locally, provided the override is recorded in
+// `.al-folio-overrides.yml` by `al-folio upgrade overrides audit`. Those acknowledged paths
+// are tracked for upstream drift, so they do not count as the starter claiming ownership.
+const acknowledgedOverrides = (() => {
+  if (!exists(".al-folio-overrides.yml")) {
+    return new Set();
+  }
+  const lines = read(".al-folio-overrides.yml").split(/\r?\n/);
+  const paths = new Set();
+  let inOverrides = false;
+  for (const line of lines) {
+    if (/^overrides:\s*$/.test(line)) {
+      inOverrides = true;
+      continue;
+    }
+    if (inOverrides && /^\S/.test(line)) {
+      inOverrides = false;
+    }
+    const match = inOverrides && line.match(/^ {2}(\S[^:]*):\s*$/);
+    if (match) {
+      paths.add(match[1].trim());
+    }
+  }
+  return paths;
+})();
+
+const ownedFilesUnder = (relPath) => {
+  const abs = path.join(root, relPath);
+  if (!fs.statSync(abs).isDirectory()) {
+    return [relPath];
+  }
+  return fs.readdirSync(abs, { withFileTypes: true }).flatMap((entry) => ownedFilesUnder(path.join(relPath, entry.name)));
+};
+
 for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
-  if (exists(forbiddenPath)) {
-    failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
+  if (!exists(forbiddenPath)) {
+    continue;
+  }
+  const unacknowledged = ownedFilesUnder(forbiddenPath).filter((file) => !acknowledgedOverrides.has(file));
+  if (unacknowledged.length > 0) {
+    failures.push(
+      `Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem ` +
+        `(unacknowledged: ${unacknowledged.join(", ")}). Run \`bundle exec al-folio upgrade overrides audit\` to record ` +
+        `a deliberate override.`
+    );
   }
 }
 

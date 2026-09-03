@@ -228,6 +228,7 @@ exclude:
   - package-lock.json
   - test/
   - _pages/about_einstein.md
+  - _pages/dropdown.md
   - _pages/books.md
   - _pages/news.md
   - _pages/plugins.md
