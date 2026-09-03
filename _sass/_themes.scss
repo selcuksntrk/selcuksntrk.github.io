@@ -213,3 +213,10 @@ html[data-theme-setting="light"] {
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
 }
+
+/* Hide the per-entry location rows in the RenderCV table. Relocated here from a
+   local `_layouts/cv.liquid` override, which shadowed an otherwise-unmodified
+   al_folio_core layout just to carry this one rule. */
+.cv .table-cv tr:has(p.location) {
+  display: none;
+}
